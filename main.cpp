@@ -1,3 +1,17 @@
+/*
+本程序是一个命令行记账本，支持：
+
+    添加记录
+    查看记录
+    删除记录
+    修改记录
+    自动保存到文件
+    启动时自动加载数据
+    数据格式示例（data.txt）:
+        100 工资
+        -50 吃饭
+*/
+
 #include <iostream>
 #include <string>
 #include <vector>
