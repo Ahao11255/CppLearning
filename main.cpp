@@ -35,7 +35,7 @@ void loadFromFIle(vector<Record>& records){
     /*
         创建一个输入文件流对象 fin，并尝试打开 data.txt
 
-        文件输入ifstream
+        向内存输入    ifstream
         先读金额，再读后面整行备注
     */
     ifstream fin("data.txt");
@@ -62,8 +62,8 @@ void loadFromFIle(vector<Record>& records){
 void saveToFile(const vector<Record>& records){
 
     /*
-        文件输出ofstream
-        将内容写入文件
+        从内存输出  ofstream
+        将内存里的内容写入文件
     */
     ofstream fout("data.txt");
     for(int i=0; i<records.size(); i++){
